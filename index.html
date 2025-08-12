@@ -5,7 +5,7 @@
     <title>Login</title>
     <style>
         body {
-            background-color: #F2E7D5; /* cor aproximada do fundo da logo */
+            background-color: #ffffff; /* mudar cor do fundo do site */
             font-family: Arial, sans-serif;
             display: flex;
             justify-content: center;
@@ -14,16 +14,10 @@
             margin: 0;
         }
 
-        /* Logo no canto superior esquerdo */
-        .logo {
-            position: absolute;
-            top: 15px;
-            left: 15px;
-            width: 180px; /* aumentar o tamanho da logo */
-        }
+       
 
         .login-container {
-            background-color: #ffffff;
+            background-color: #B8DAD8;
             padding: 50px;
             border-radius: 10px;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
@@ -105,21 +99,30 @@
 <body>
 
 
-    <img src="logo juquinha.png" alt="Logo Prof Juquinha" class="logo">
-    <!-- Logo -->
 
     <div class="login-container">
         <h2>Faça login na sua conta</h2>
         <form>
             <div class="input-group">
                 
+                <style>
+                    input::placeholder {
+                      color: white;       /* mudar cor do placeholder */
+                      opacity: 1;         /* garante que  o placeholder fique totalmente visível */
+                    }
+                  </style>
                 
-                <input type="email" placeholder="E-mail" required>
+                <input type="email" style="background-color: #2C7A84 "placeholder= E-mail required>
             </div>
             <div class="input-group">
                 
-                
-                <input type="password" placeholder="Senha" required minlength="8" maxlength="8">
+                <style>
+                    input::placeholder {
+                      color: white;      /* mudar cor do placeholder */
+                      opacity: 1;         /* garante que  o placeholder fique totalmente visível */
+                    }
+                  </style>
+                <input type="password" style="background-color: #2C7A84 "placeholder= Senha required minlength="8" maxlength="8">
             </div>
             <button type="submit">Entrar</button>
         </form>
